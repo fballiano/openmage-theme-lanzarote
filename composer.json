@@ -1,6 +1,6 @@
 {
     "name": "fballiano/newbreeze",
-    "description": "Tailwind based template for OpenMage",
+    "description": "TailwindCSS + DaisyUI based template for OpenMage",
     "type": "magento-module",
     "authors": [
         {
