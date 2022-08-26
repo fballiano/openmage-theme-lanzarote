@@ -1,1 +1,1 @@
-# NewBreeze - TailwindCSS + DaisyUI based template for OpenMage
+# NewBreeze: TailwindCSS + DaisyUI based template for OpenMage
