@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./css/styles.src.css"],
   theme: {
+    container: {
+      center: true
+    },
     extend: {},
   },
-  plugins: [require("daisyui")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
 }
