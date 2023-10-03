@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {@apply container mx-auto}
+.global-site-notice {@apply alert alert-warning text-sm}
+#header-account > .links > ul {@apply flex}
+
+.nav-primary {@apply menu menu-horizontal menu-dropdown}
+
+.breadcrumbs {@apply text-sm}
+.breadcrumbs li > span:last-of-type {@apply hidden}
+
+ul.products-grid {@apply grid}
+ul.products-grid.products-grid--max-4-col {@apply grid-cols-4}
+ul.configurable-swatch-list {@apply flex justify-items-center}
+.actions .add-to-links {@apply join}
+.actions .add-to-links > * {@apply join-item}
+
+.toolbar {@apply mx-auto}
+.toolbar, .toolbar .sorter, .toolbar > .pager > * {@apply join}
+.toolbar > *, .toolbar .sorter > *, .toolbar > .pager > * > * {@apply join-item btn}
+
+.footer .block-title {@apply footer-title}
+.footer.copyright {@apply place-items-center}
