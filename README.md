@@ -1,1 +1,1 @@
-# NewBreeze: TailwindCSS + DaisyUI based template for OpenMage
+# Lanzarote: an OpenMage theme based on TailwindCSS and DaisyUI
