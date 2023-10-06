@@ -5,6 +5,9 @@ This is a project for a modern frontend theme for OpenMage:
 - CSS framework: [TailwindCSS](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
 - package manager: [Bun](https://bun.sh)
 
+## Screenshot of the first pre-alpha version, category page
+![2023-10-06-11-45-openmage test](https://github.com/fballiano/openmage-theme-lanzarote/assets/909743/0ac7f447-cd05-4112-9597-8c26455219cb)
+
 ## How to run
 
 ### I don't need any customization
