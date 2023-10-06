@@ -2,24 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
-.wrapper {@apply container mx-auto}
-.global-site-notice {@apply alert alert-warning text-sm}
+/* GLOBAL */
+
+.page {@apply container mx-auto}
+.global-site-notice {@apply bg-warning text-sm rounded-none text-center py-1}
+.page-title h1 {@apply text-2xl font-bold mb-2}
+.breadcrumbs {@apply text-sm text-gray-500}
+.breadcrumbs li > span:last-of-type {@apply hidden}
+
+/* HEADER */
+
+#header-account > .links {@apply text-right}
 #header-account > .links > ul {@apply flex}
 
-.nav-primary {@apply menu menu-horizontal menu-dropdown}
+#header-search label {@apply hidden}
+#header-search #search {@apply input input-bordered input-sm join-item rounded-r-none}
+#header-search .input-box {@apply join}
+#header-search button {@apply btn btn-sm join-item rounded-l-none; font-size: 0}
+#header-search button:before {content:url('data:image/svg+xml,<svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.7955 15.8111L21 21M18 10.5C18 14.6421 14.6421 18 10.5 18C6.35786 18 3 14.6421 3 10.5C3 6.35786 6.35786 3 10.5 3C14.6421 3 18 6.35786 18 10.5Z" stroke="%23000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'); margin:0; padding:0}
+.form-language {@apply form-control ml-2}
+.form-language > label {@apply hidden}
+.form-language > select {@apply select select-bordered select-sm}
 
-.breadcrumbs {@apply text-sm}
-.breadcrumbs li > span:last-of-type {@apply hidden}
+.nav-primary {@apply menu menu-horizontal dropdown-content}
+.skip-links, #header-nav {display:none}
+
+#header-account > .links > ul {@apply menu menu-horizontal menu-xs}
+
+/* LAYERED */
+
+.col-wrapper {@apply flex gap-4}
+.sidebar {@apply text-sm w-1/4}
+.sidebar .block-subtitle {@apply invisible}
+.col-left.sidebar {@apply border-r}
+.col-right.sidebar {@apply hidden}
+#narrow-by-list li {@apply whitespace-nowrap}
+#narrow-by-list dt {@apply font-bold}
+#narrow-by-list dd {@apply mb-4}
+#narrow-by-list span.count {@apply text-xs}
+ol.configurable-swatch-list {@apply flex flex-wrap gap-2}
+
+/* TOOLBAR */
+
+.toolbar {@apply text-xs navbar justify-between}
+.toolbar .view-mode, .toolbar .count-container {@apply join join-horizontal}
+.toolbar .view-mode > * {@apply join-item pe-2}
+.toolbar .view-mode {@apply border-r border-neutral-content rounded-none}
+.toolbar .sort-by {@apply pl-2}
+.toolbar .count-container > * {@apply join-item ps-2}
+.toolbar .count-container .amount strong {@apply font-normal}
+.toolbar .count-container .amount {@apply border-r border-neutral-content rounded-none pr-2}
+.toolbar .sort-by-switcher {@apply btn btn-xs pr-0; font-size: 0}
+.toolbar .sort-by-switcher--asc:before {content: '↓'; @apply text-xs}
+.toolbar .sort-by-switcher--desc:before {content: '↑'; @apply text-xs}
+
+/* COLOR SWATCHES */
+.configurable-swatch-list .swatch-label {@apply border text-center}
+.configurable-swatch-list .swatch-link {@apply grid grid-flow-row}
+
+/* CATEGORY PAGE */
+.category-products > ul > li {@apply p-2 bg-white hover:outline hover:outline-neutral-content hover:scale-105 transition-all}
+.category-products .product-name {@apply font-bold h-12 overflow-ellipsis mb-2}
+.category-products .price-box {@apply flex gap-2 mb-2}
+.category-products .price-box .price-label {@apply hidden}
+.category-products .price-box .old-price {@apply line-through text-sm mt-0.5 text-gray-400}
+.category-products .ratings {@apply text-sm}
 
 ul.products-grid {@apply grid}
 ul.products-grid.products-grid--max-4-col {@apply grid-cols-4}
 ul.configurable-swatch-list {@apply flex justify-items-center}
-.actions .add-to-links {@apply join}
-.actions .add-to-links > * {@apply join-item}
+ul.products-grid .actions .button {@apply btn btn-xs}
+ul.products-grid .actions .add-to-links > * {@apply btn btn-xs}
+ul.products-grid .actions .add-to-links .separator {@apply hidden}
 
-.toolbar {@apply mx-auto}
-.toolbar, .toolbar .sorter, .toolbar > .pager > * {@apply join}
-.toolbar > *, .toolbar .sorter > *, .toolbar > .pager > * > * {@apply join-item btn}
+/* FOOTER */
 
+.footer {@apply pt-10 pl-5 pr-5 pb-1 bg-base-200 text-base-content}
 .footer .block-title {@apply footer-title}
-.footer.copyright {@apply place-items-center}
+.footer.copyright {@apply place-items-center text-xs}
