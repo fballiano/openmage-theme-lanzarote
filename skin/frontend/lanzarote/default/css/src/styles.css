@@ -14,7 +14,6 @@
 
 #header-account > .links {@apply text-right}
 #header-account > .links > ul {@apply flex}
-
 #header-search label {@apply hidden}
 #header-search #search {@apply input input-bordered input-sm join-item rounded-r-none}
 #header-search .input-box {@apply join}
@@ -67,8 +66,10 @@ ol.configurable-swatch-list {@apply flex flex-wrap gap-2}
 .category-products .price-box .price-label {@apply hidden}
 .category-products .price-box .old-price {@apply line-through text-sm mt-0.5 text-gray-400}
 .category-products .ratings {@apply text-sm}
+.category-products .category-image img {@apply rounded}
 
 ul.products-grid {@apply grid}
+ul.products-grid.products-grid--max-3-col {@apply grid-cols-3}
 ul.products-grid.products-grid--max-4-col {@apply grid-cols-4}
 ul.configurable-swatch-list {@apply flex justify-items-center}
 ul.products-grid .actions .button {@apply btn btn-xs}

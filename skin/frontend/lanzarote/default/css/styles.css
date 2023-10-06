@@ -2435,6 +2435,14 @@ html {
   display: none;
 }
 
+.w-auto {
+  width: auto;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
 .resize {
   resize: both;
 }
@@ -4481,8 +4489,16 @@ ol.configurable-swatch-list {
   line-height: 1.25rem;
 }
 
+.category-products .category-image img {
+  border-radius: 0.25rem;
+}
+
 ul.products-grid {
   display: grid;
+}
+
+ul.products-grid.products-grid--max-3-col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 ul.products-grid.products-grid--max-4-col {
